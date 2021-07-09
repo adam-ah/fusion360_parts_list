@@ -100,7 +100,7 @@ def run(context):
     dialog_str += '</table>'
 
     if not_visible_count:
-        dialog_str += f'<br/><br/><i>Note: {not_visible_count} hidden {"body" if not_visible_count == 1 else "bodies"} exluded from the lists</i>'
+        dialog_str += f'<br/><br/><i>Note: {not_visible_count} hidden {"body" if not_visible_count == 1 else "bodies"} excluded from the lists</i>'
 
     ui.messageBox(dialog_str, 'Total materials used', adsk.core.MessageBoxButtonTypes.OKButtonType,
                   adsk.core.MessageBoxIconTypes.InformationIconType)
