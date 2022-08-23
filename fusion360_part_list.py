@@ -41,10 +41,6 @@ def run(context):
         for bidx in range(0, subcomp.bRepBodies.count):
             body = subcomp.bRepBodies.item(bidx)
 
-            if not body.isVisible:
-                not_visible_count += 1
-                continue
-
             dimvector = body.boundingBox.minPoint.vectorTo(
                 body.boundingBox.maxPoint).asPoint()
             dims = sorted(dimvector.asArray())
